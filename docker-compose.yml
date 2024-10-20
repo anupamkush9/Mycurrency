@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  mycurrency_app:
+    build: .
+    container_name: mycurrency_app
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code/
+    ports:
+      - 8000:8000
+    restart: always
+    networks:
+    - mycurrency_app_network
+
+
+networks:
+  mycurrency_app_network:
+    driver: bridge
+
