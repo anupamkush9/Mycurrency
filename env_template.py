@@ -1,3 +1,2 @@
-API_KEY="api_key"
-BASE_URL = "currencybeacon_base_url"
-
+API_KEY="api_key (This is required)"
+BASE_URL = "currencybeacon_base_url ( optional because default value is set )"

@@ -1,0 +1,984 @@
+{
+	"info": {
+		"_postman_id": "240047a9-bee9-409b-a437-493f191c2525",
+		"name": "Mycurrency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36002631"
+	},
+	"item": [
+		{
+			"name": "currency-exchange-rate CRUD API",
+			"item": [
+				{
+					"name": "Get all currency-exchange-rate",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/currency-exchange-rate",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"currency-exchange-rate"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/currency-exchange-rate",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"currency-exchange-rate"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 14:43:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3187"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-01\",\n        \"original_amount\": \"100.000000\",\n        \"converted_amount\": \"160.075000\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 2,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"100.000000\",\n        \"converted_amount\": \"160.075000\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 3,\n        \"source_currency\": \"INN\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"100.000000\",\n        \"converted_amount\": \"160.075000\",\n        \"rate_value\": \"1.600770\"\n    },\n    {\n        \"id\": 4,\n        \"source_currency\": \"INN\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"500.000000\",\n        \"converted_amount\": \"160.075000\",\n        \"rate_value\": \"1.600770\"\n    },\n    {\n        \"id\": 5,\n        \"source_currency\": \"INN\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"500.000000\",\n        \"converted_amount\": \"160.075000\",\n        \"rate_value\": \"1.600770\"\n    },\n    {\n        \"id\": 6,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"100.000000\",\n        \"converted_amount\": \"160.075000\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 7,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"88.000000\",\n        \"converted_amount\": \"140.866000\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 8,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"89.000000\",\n        \"converted_amount\": \"142.466750\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 9,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"500.000000\",\n        \"converted_amount\": \"800.375000\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 10,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"USD\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"1000.000000\",\n        \"converted_amount\": \"11.894660\",\n        \"rate_value\": \"0.011895\"\n    },\n    {\n        \"id\": 11,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"USD\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"90.000000\",\n        \"converted_amount\": \"1.070519\",\n        \"rate_value\": \"0.011895\"\n    },\n    {\n        \"id\": 12,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"88.000000\",\n        \"converted_amount\": \"140.866000\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 13,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"900.000000\",\n        \"converted_amount\": \"1440.675000\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 14,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"10.000000\",\n        \"converted_amount\": \"16.007500\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 15,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"USD\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"9090.000000\",\n        \"converted_amount\": \"108.122914\",\n        \"rate_value\": \"0.011895\"\n    },\n    {\n        \"id\": 16,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"90.000000\",\n        \"converted_amount\": \"144.067500\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 17,\n        \"source_currency\": \"USD\",\n        \"exchanged_currency\": \"USD\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"899.000000\",\n        \"converted_amount\": \"899.000000\",\n        \"rate_value\": \"1.000000\"\n    },\n    {\n        \"id\": 18,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"USD\",\n        \"valuation_date\": \"2024-10-20\",\n        \"original_amount\": \"200.000000\",\n        \"converted_amount\": \"2.378890\",\n        \"rate_value\": \"0.011894\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "create currency-exchange-rate Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"source_currency\": \"INN\",\n    \"exchanged_currency\": \"NPR\",\n    \"original_amount\": \"500.000000\",\n    \"converted_amount\": \"160.075000\",\n    \"rate_value\": \"1.60077\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/currency-exchange-rate/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"currency-exchange-rate",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Bad Request 400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"source_currency\": \"INN\",\n    \"exchanged_currency\": \"NPR@#$%^\",\n    \"valuation_date\": \"2024-10-19\",\n    \"original_amount\": \"100.000000\",\n    \"converted_amount\": \"160.075000\",\n    \"rate_value\": \"1.60077\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/currency-exchange-rate/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"currency-exchange-rate",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 19 Oct 2024 16:14:43 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"exchanged_currency\": [\n        \"Ensure this field has no more than 3 characters.\"\n    ]\n}"
+						},
+						{
+							"name": "Created 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"source_currency\": \"INN\",\n    \"exchanged_currency\": \"NPR\",\n    \"original_amount\": \"500.000000\",\n    \"converted_amount\": \"160.075000\",\n    \"rate_value\": \"1.60077\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/currency-exchange-rate/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"currency-exchange-rate",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 19 Oct 2024 16:15:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "176"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"source_currency\": \"INN\",\n    \"exchanged_currency\": \"NPR\",\n    \"valuation_date\": \"2024-10-19\",\n    \"original_amount\": \"500.000000\",\n    \"converted_amount\": \"160.075000\",\n    \"rate_value\": \"1.600770\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get currency-exchange-rate by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/currency-exchange-rate/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"currency-exchange-rate",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get currency-exchange-rate by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/currency-exchange-rate/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"currency-exchange-rate",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 19 Oct 2024 16:19:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "176"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"source_currency\": \"INR\",\n    \"exchanged_currency\": \"NPR\",\n    \"valuation_date\": \"2024-10-19\",\n    \"original_amount\": \"100.000000\",\n    \"converted_amount\": \"160.075000\",\n    \"rate_value\": \"1.600750\"\n}"
+						},
+						{
+							"name": "Bad Request 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/currency-exchange-rate/156789",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"currency-exchange-rate",
+										"156789"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 14:44:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"No CurrencyExchangeRate matches the given query.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update currency-exchange-rate by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/currency-exchange-rate/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"currency-exchange-rate",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"source_currency\": \"INR\",\n    \"exchanged_currency\": \"NPR\",\n    \"valuation_date\": \"2024-10-1\",\n    \"original_amount\": \"100.000000\",\n    \"converted_amount\": \"160.075000\",\n    \"rate_value\": \"1.600750\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/currency-exchange-rate/1/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"currency-exchange-rate",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 19 Oct 2024 16:21:20 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "176"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"source_currency\": \"INR\",\n    \"exchanged_currency\": \"NPR\",\n    \"valuation_date\": \"2024-10-01\",\n    \"original_amount\": \"100.000000\",\n    \"converted_amount\": \"160.075000\",\n    \"rate_value\": \"1.600750\"\n}"
+						},
+						{
+							"name": "Bad Request 400",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"source_currency\": \"INR\",\n    \"exchanged_currency\": \"NPR\",\n    \"valuation_date\": \"2024-10-1\",\n    \"original_amount\": \"100.000000\",\n    \"converted_amount\": \"160.075000kljk\",\n    \"rate_value\": \"1.600750\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/currency-exchange-rate/1/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"currency-exchange-rate",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 19 Oct 2024 16:21:56 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"converted_amount\": [\n        \"A valid number is required.\"\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "convert_currency_api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"source_currency\":\"inr\",\n\"exchanged_currency\":\"npr\",\n\"amount\":\"100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/convert_currency/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"convert_currency",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success 200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"source_currency\":\"inr\",\n\"exchanged_currency\":\"npr\",\n\"amount\":\"100\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/convert_currency/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"convert_currency",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Oct 2024 16:25:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "118"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"source_currency\": \"INR\",\n    \"exchanged_currency\": \"NPR\",\n    \"original_amount\": 100,\n    \"converted_amount\": 160.075,\n    \"rate\": 1.60075\n}"
+				},
+				{
+					"name": "400 Bad Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"source_currency\":\"inr\",\n\"exchanged_currency\":\"npr\",\n\"amount\": \"lksjdfsdfsdfa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/convert_currency/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"convert_currency",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Oct 2024 16:26:59 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"amount\": [\n        \"A valid number is required.\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "exchange_rate_list_between_dates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/currency-exchange-rate-list/?currency=inr&from_date=2019-03-01&to_date=2028-03-09",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"currency-exchange-rate-list",
+						""
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "inr"
+						},
+						{
+							"key": "from_date",
+							"value": "2019-03-01"
+						},
+						{
+							"key": "to_date",
+							"value": "2028-03-09"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Bad Request 400",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/currency-exchange-rate-list/?currency=inruijk&from_date=2099-03-01898989ui&to_date=2028-03-09",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"currency-exchange-rate-list",
+								""
+							],
+							"query": [
+								{
+									"key": "currency",
+									"value": "inruijk"
+								},
+								{
+									"key": "from_date",
+									"value": "2099-03-01898989ui"
+								},
+								{
+									"key": "to_date",
+									"value": "2028-03-09"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Oct 2024 16:37:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"currency\": [\n        \"Ensure this field has no more than 3 characters.\"\n    ],\n    \"from_date\": [\n        \"Date has wrong format. Use one of these formats instead: YYYY-MM-DD.\"\n    ]\n}"
+				},
+				{
+					"name": "Success 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/currency-exchange-rate-list/?currency=inr&from_date=2019-03-01&to_date=2028-03-09",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"currency-exchange-rate-list",
+								""
+							],
+							"query": [
+								{
+									"key": "currency",
+									"value": "inr"
+								},
+								{
+									"key": "from_date",
+									"value": "2019-03-01"
+								},
+								{
+									"key": "to_date",
+									"value": "2028-03-09"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Oct 2024 16:38:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "532"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-01\",\n        \"original_amount\": \"100.000000\",\n        \"converted_amount\": \"160.075000\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 2,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"100.000000\",\n        \"converted_amount\": \"160.075000\",\n        \"rate_value\": \"1.600750\"\n    },\n    {\n        \"id\": 6,\n        \"source_currency\": \"INR\",\n        \"exchanged_currency\": \"NPR\",\n        \"valuation_date\": \"2024-10-19\",\n        \"original_amount\": \"100.000000\",\n        \"converted_amount\": \"160.075000\",\n        \"rate_value\": \"1.600750\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
