@@ -19,7 +19,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-c
 7. Run makemigration and migrate command
     > sudo docker exec -it mycurrency_app sh  
     > python3 manage.py makemigrations   
-    > python3 manage.py migrate
+    > python3 manage.py migrate   
     > python3 manage.py createsuperuser
 
 7. To stop the containers:
