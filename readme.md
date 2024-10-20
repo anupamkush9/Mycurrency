@@ -1,6 +1,6 @@
 # Commands for project set up
 
-1. Locate the .env-template file.
+1. Locate the .env_template file.
 
 2. Create a .env file in your project root by copying the template:
     > cp .env-template .env
